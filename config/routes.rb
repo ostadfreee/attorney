@@ -1,8 +1,14 @@
 Attorney::Application.routes.draw do
+  
   get "static_pages/home"
   get "static_pages/law"
   get "static_pages/university"
   get "static_pages/contact"
+  root  'static_pages#home'
+   match '/law',   to: 'static_pages#law',   via: 'get'
+   match '/contact', to: 'static_pages#contact', via: 'get'  
+   match '/university', to: 'static_pages#university', via: 'get' 
+   
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
