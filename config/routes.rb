@@ -1,9 +1,21 @@
 Attorney::Application.routes.draw do
   
+ 
    root  'static_pages#home'
    match '/law',   to: 'static_pages#law',   via: 'get'
    match '/contact', to: 'static_pages#contact', via: 'get'  
    match '/university', to: 'static_pages#university', via: 'get' 
+  
+   match 'base', to: 'reference_pages#base', via: 'get'
+   match 'work', to: 'reference_pages#work', via: 'get'
+   match 'office', to: 'reference_pages#office', via: 'get'
+   
+   match 'officea', to: 'introduction_pages#officea', via: 'get'
+   match 'officeb', to: 'introduction_pages#officeb', via: 'get'
+   match 'basea', to: 'introduction_pages#basea', via: 'get'
+   match 'baseb', to: 'introduction_pages#baseb', via: 'get'
+   match 'worka', to: 'introduction_pages#worka', via: 'get'
+
    
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
