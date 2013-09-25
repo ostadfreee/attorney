@@ -7,4 +7,7 @@ class ReferencePagesController < ApplicationController
 
   def work
   end
+  
+  def article
+  end
 end
