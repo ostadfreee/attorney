@@ -1,0 +1,50 @@
+<%= form_for inquiry do |f| %>
+  <% if inquiry.errors.any? %>
+    <ul>
+      <% inquiry.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+    </ul>
+  <% end %>
+  <h3 dir="rtl" >        اطلاعات تماس:</h3>
+<p dir="rtl">  آدرس دفتر:           مشهد، بلوارمدرس (دروازه طلایی) ، نبش مدرس ۸<br>ساختمان مدرس، طبقه چهارم واحد ۴  <br>
+  ساعات کار: شنبه تا چهارشنبه ۵ تا ۷ بعد از ظهر <br>
+تلفن: ۰۵۱۱۲۲۵۶۴۷۳  
+<br>تلفاکس: ۰۵۱۱۲۲۵۱۵۶۰ 
+<br>همراه: ۰۹۱۵۳۱۳۹۸۲۲ 
+<br> پست الکترونیکی: abasshahravan@gmail.com  </p>
+<figure class="img-border">
+                      <iframe width="400" height="260" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/?ie=UTF8&amp;ll=36.300185,59.607182&amp;spn=0.079549,0.157928&amp;t=m&amp;z=13&amp;output=embed"></iframe>
+                    </figure> <br><br><br><br><br><br><br>
+                    <h2> Contact Us: </h2>
+                    <p>No.4, 4th Floor, Modarres Buld, Modarres Blvd, Mashhad-Iran <br>
+  Tel: +98-511-2256473 <br>
+  Tel & fax: +98-511- 2251560<br>
+  Mob: +98-915 313 9822 <br>
+  Working days are: Sat-Wed 5p.m to 7p.m <br>
+  email: abasshahravan@gmail.com
+  
+  <div style="display: none;">
+    <%= f.label :nickname %><br/>
+    <%= f.text_field :nickname %>
+  </div>
+  
+  <div>
+    <%= f.label :name %><br/>
+    <%= f.text_field :name%>
+  </div>
+  
+  <div>
+    <%= f.label :email %><br/>
+    <%= f.text_field :email %>
+  </div>
+  
+  <div>
+    <%= f.label :message %><br/>
+    <%= f.text_area :message %>
+  </div>
+  
+  <div>
+    <%= f.submit "Send" %>
+  </div>
+<% end %>

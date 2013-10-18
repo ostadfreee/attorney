@@ -1,9 +1,14 @@
 Attorney::Application.routes.draw do
+  resources :inquiries, :only => [:new, :create] do
+  get 'thank_you', :on => :collection
+end
   
  
    root  'static_pages#home'
    match '/law',   to: 'static_pages#law',   via: 'get'
-   match '/contact', to: 'static_pages#contact', via: 'get'  
+   #match '/contact', to: 'static_pages#contact', via: 'get' 
+   match '/contact' , to: 'inquiries#new', via: 'get'
+
    match '/university', to: 'static_pages#university', via: 'get' 
      
    match 'base', to: 'reference_pages#base', via: 'get'
