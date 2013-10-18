@@ -18,7 +18,9 @@ class Inquiry
   #validates :nickname, 
             #:format => { :with => /^$/ }
           HUMANIZED_ATTRIBUTES = {
-:name => "story"
+:name => "اسم",
+:email=> "پست الکترونیکی",
+:message => "پیغام"
 }
  def self.human_attribute_name(attr, options={})
     HUMANIZED_ATTRIBUTES[attr.to_sym] || super
