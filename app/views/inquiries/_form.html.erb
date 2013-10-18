@@ -1,11 +1,4 @@
-<%= form_for inquiry do |f| %>
-  <% if inquiry.errors.any? %>
-    <ul>
-      <% inquiry.errors.full_messages.each do |msg| %>
-        <li><%= msg %></li>
-      <% end %>
-    </ul>
-  <% end %>
+
   <h3 dir="rtl" >        اطلاعات تماس:</h3>
 <p dir="rtl">  آدرس دفتر:           مشهد، بلوارمدرس (دروازه طلایی) ، نبش مدرس ۸<br>ساختمان مدرس، طبقه چهارم واحد ۴  <br>
   ساعات کار: شنبه تا چهارشنبه ۵ تا ۷ بعد از ظهر <br>
@@ -23,28 +16,39 @@
   Mob: +98-915 313 9822 <br>
   Working days are: Sat-Wed 5p.m to 7p.m <br>
   email: abasshahravan@gmail.com
+  <%= form_for inquiry do |f| %>
+  <% if inquiry.errors.any? %>
+    <ul>
+      <% inquiry.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+    </ul>
+  <% end %>
   
   <div style="display: none;">
     <%= f.label :nickname %><br/>
     <%= f.text_field :nickname %>
   </div>
   
-  <div>
+  <div dir= "rtl">
+    <div class = name>
     <%= f.label :name %><br/>
     <%= f.text_field :name%>
   </div>
   
-  <div>
+  <div dir = "rtl">
     <%= f.label :email %><br/>
     <%= f.text_field :email %>
   </div>
   
-  <div>
+  <div dir = "rtl">
     <%= f.label :message %><br/>
     <%= f.text_area :message %>
+    
   </div>
   
-  <div>
-    <%= f.submit "Send" %>
+  <div dir = "rtl">
+    <%= f.submit "ارسال" %>
   </div>
+</div>
 <% end %>

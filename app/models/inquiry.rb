@@ -7,18 +7,19 @@ class Inquiry
   attr_accessor :name, :email, :message, :nickname
   
   validates :name, 
-            :presence => { :message => "Story title is required" }
+            :presence => { :message => "نمیتواند خالی باشد" }
   
   validates :email,
-            :format => { :with => /\b[A-Z0-9._%a-z\-]+@(?:[A-Z0-9a-z\-]+\.)+[A-Za-z]{2,4}\z/ }
+            :presence => { :message => "نمیتواند خالی باشد" },
+            :format => { :with => /\b[A-Z0-9._%a-z\-]+@(?:[A-Z0-9a-z\-]+\.)+[A-Za-z]{2,4}\z/, :message=> "معتبر نمیباشد" }
   
   validates :message,
-            :length => { :minimum => 10, :maximum => 1000 }
+            :length => { :minimum => 10, :maximum => 1000, :message => "حداقل ۱۰ کاراکتر میباشد" }
             
   #validates :nickname, 
             #:format => { :with => /^$/ }
           HUMANIZED_ATTRIBUTES = {
-:name => "اسم",
+:name => "نام و نام خوانوادگی",
 :email=> "پست الکترونیکی",
 :message => "پیغام"
 }
