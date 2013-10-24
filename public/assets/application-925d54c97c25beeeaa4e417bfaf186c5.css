@@ -1,0 +1,68 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+
+
+ */
+
+/*
+	template: Lawyer&Attorney
+	author:   Luka Cvrk (www.solucija.com)
+*/
+
+
+* { margin: 0; padding: 0; }
+body { font: .74em Tahoma, Verdana, Sans-Serif, Arial; background: url("body.gif") repeat; color: #7f7f7f; }
+h1 { font: normal 3.4em "Trebuchet MS", Helvetica, Arial; }
+h2 { font: normal 1.8em "Trebuchet MS", Helvetica, Arial; color: #dfdfdf; margin: 0 0 15px; }
+h3 { font: normal 1.8em "Pertili", Helvetica, Arial ; margin: 0 0 20px; color: #dfdfdf }
+h4 { font: normal 1.2em "Trebuchet MS", Helvetica, Arial; color: #dfdfdf; margin: 0 0 4px; }
+p { margin: 0 0 15px; line-height: 2em; color: #dfdfdf; font-size: 120%; }
+a { outline: 0; color: #304D6F; text-decoration: none; }
+li { list-style: none; }
+li a, img { display: block; }
+img { outline: 0; border: 0; }
+#wrapper { width: 984px; height: 650px; margin: auto; }
+.clr { clear: both; }
+#logo { float: right; padding: 30px 15px; }
+	#logo h1 a { color: #fff; }
+		#logo h1 a span { color: #808080; }
+#menu { height: 44px; padding: 5px 0 0 4px;  }
+	#menu li { float: right; font-size: 1.2em; text-transform: uppercase; }
+		#menu li a { color: #dfdfdf; margin: 0 50px 0 0; }
+			#menu li a.current, #menu li a:hover { color: #fff; }			
+	#pitch { clear: both; background: url("pitch.jpg") no-repeat; height: 290px; margin: 0 0 30px; padding: 30px 360px 0 30px; }
+		#pitch h1 { font-size: 1.5em; color: #000000; margin: 0 0 20px; position:relative; left:350px; top:-30px; }
+		#pitch em { font-size: 2.3em; font-weight: bold; line-height: 1.6em;}
+		#pitch h2 {font: normal 1.4em "Trebuchet MS", Helvetica, Arial; color: #000000; position:relative; left:350px; top:0;}
+		#pitch h3 {font: normal 2.7em "Pertili", Helvetica, Arial, ; color: #000000;position: relative; left:350px; top:1;}
+.content { background: url("content.gif") repeat; padding: 20px; }
+.link { background: #304D6F; color: #fff; padding: 5px 10px; font-size: .9em; float:right }
+#main { padding: 20px; }
+.col { float: left; width: 292px; margin: 0 30px 15px 0; }
+	.col.last { float: right; margin-right: 0; }
+	.case img { float: left; clear: left; margin: 0 20px 20px 0; background: #121212; padding: 3px; }
+	.short { padding: 0 0 15px 0; background: url("line.gif") repeat-x left bottom; }
+	.case a, .article a { color: #ddd; font-weight: bold; }
+	.date { font-size: .84em; margin: 0 0 3px; }
+#footer { clear: both; background: url("line.gif") repeat-x; padding: 20px 20px 10px; font-size: .9em; }
+	#footer a { color: #ccc; margin: 0 10px 0 0; border-bottom: 1px dotted #444; padding: 0 0 1px; }
+	#links { float: right; }
+		#links a { margin: 0 0 0 10px; }
+	#footer p { margin: 0 0 8px; }
+	.img-border {
+	padding:4px ;
+	border:1px solid #e5e5e5;
+	background:#fff;
+	float:right;
+	position: relative;
+	left: -530px;
+	top: -200px;
+}
