@@ -7,7 +7,7 @@
 body { font: .74em Tahoma, Verdana, Sans-Serif, Arial; background: url("body.gif") repeat; color: #7f7f7f; }
 h1 { font: normal 3.4em "Trebuchet MS", Helvetica, Arial; }
 h2 { font: normal 1.8em "Trebuchet MS", Helvetica, Arial; color: #dfdfdf; margin: 0 0 15px; }
-h3 { font: normal 2.2em "Pertili", Helvetica, Arial ; margin: 0 0 15px; color: #dfdfdf; }
+h3 { font: normal 2.2em "Pertili", Helvetica, Arial; margin: 0 0 15px; color: #dfdfdf; }
 h4 { font: normal 1.2em "Trebuchet MS", Helvetica, Arial; color: #dfdfdf; margin: 0 0 4px; }
 p { margin: 0 0 15px; line-height: 2em; color: #dfdfdf; font-size: 120%; }
 a { outline: 0; color: #304D6F; text-decoration: none; }
@@ -27,7 +27,7 @@ img { outline: 0; border: 0; }
 		#pitch h1 { font-size: 1.5em; color: #000000; margin: 0 0 20px; position:relative; left:350px; top:-30px; }
 		#pitch em { font-size: 2.3em; font-weight: bold; line-height: 1.6em;}
 		#pitch h2 {font: normal 1.4em "Trebuchet MS", Helvetica, Arial; color: #000000; position:relative; left:350px; top:0;}
-		#pitch h3 {font: normal 2.7em "Pertili", Helvetica, Arial, ; color: #000000;position: relative; left:350px; top:1;}
+		#pitch h3 {font: normal 2.7em "Pertili", Helvetica, Arial; color: #000000;position: relative; left:350px; top:1;}
 .content { background: url("content.gif") repeat; padding: 20px; }
 .link { background: #304D6F; color: #fff; padding: 5px 10px; font-size: .9em; float:right }
 #main { padding: 20px; }
