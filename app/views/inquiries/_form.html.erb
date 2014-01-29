@@ -5,7 +5,7 @@
 تلفن: ۰۵۱۱۲۲۵۶۴۷۳  
 <br>تلفاکس: ۰۵۱۱۲۲۵۱۵۶۰ 
 <br>همراه: ۰۹۱۵۳۱۳۹۸۲۲ 
-<br> پست الکترونیکی: abasshahravan@yyahoo.com  </p>
+<br> پست الکترونیکی: abasshahravan@gmail.com  </p>
 
                      <div class = "english">
                     <h2> Contact Us: </h2>
@@ -17,39 +17,4 @@
   email: abasshahravan@gmail.com 
 </div>
 
-  <%= form_for inquiry do |f| %>
-  <% if inquiry.errors.any? %>
-    <ul>
-      <% inquiry.errors.full_messages.each do |msg| %>
-        <li><%= msg %></li>
-      <% end %>
-    </ul>
-  <% end %>
   
-  <div style="display: none;">
-    <%= f.label :nickname %><br/>
-    <%= f.text_field :nickname %>
-  </div>
-  
-  <div dir= "rtl">
-    <div class = name>
-    <%= f.label :name %><br/>
-    <%= f.text_field :name%>
-  </div>
-  
-  <div dir = "rtl">
-    <%= f.label :email %><br/>
-    <%= f.text_field :email %>
-  </div>
-  
-  <div dir = "rtl">
-    <%= f.label :message %><br/>
-    <%= f.text_area :message %>
-    
-  </div>
-  
-  <div dir = "rtl">
-    <%= f.submit "ارسال" %>
-  </div>
-</div>
-<% end %>
