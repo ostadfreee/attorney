@@ -3,7 +3,7 @@ ruby '2.0.0'
 #ruby-gemset=railstutorial_rails_4_0
 
 gem 'rails', '4.0.0'
-gem 'pg', '0.15.1'
+
 gem 'pony'
 
 group :development, :test do
@@ -28,4 +28,5 @@ end
 
 group :production do
   gem 'rails_12factor', '0.0.2'
+  gem 'pg'
 end
